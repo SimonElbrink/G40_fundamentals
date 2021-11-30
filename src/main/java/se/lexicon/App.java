@@ -42,9 +42,7 @@ public class App
 
 
 
-        String firstName = "Simon";
-
-        System.out.println(firstName);
+        practice1();
 
 
     }
