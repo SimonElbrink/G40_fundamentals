@@ -20,7 +20,7 @@ public class App { //start of the class
     public static void main( String[] args ) //Syntax for writhing a main method.
     { //Start of main method
 
-        System.out.println("#### chars ####");
+        System.out.println("#### chars example ####");
         char numberSign = '\u0023'; //#
         char four = '\u0034'; //4
         char zero = '\u0030'; //0
@@ -29,8 +29,9 @@ public class App { //start of the class
 
         System.out.println("Hello Group " + numberSign + four + zero);
 
+// ----------------------------------------------------------------------
 
-        System.out.println("#### int numbers ####");
+        System.out.println("#### Number and calculations ####");
         int number1 = 100;
         int number2 = 50;
         int result = 100;
@@ -45,6 +46,7 @@ public class App { //start of the class
 
         System.out.println(12 % 3);
 
+// ----------------------------------------------------------------------
 
         System.out.println("#### boolean ####");
         boolean isTrue = true;
@@ -54,56 +56,14 @@ public class App { //start of the class
 
 
         System.out.println("#### PRACTICE 1 ####");
-        practice1();
+        LecturePractices.practice1();
 
         System.out.println("#### PRACTICE 2 ####");
-        practice2();
-
+        LecturePractices.practice2(); // Calling method from our class.
 
         System.out.println("#### PRACTICE 3 ####");
-
-        practice3();
+        LecturePractices.practice3();
 
     } //End of main method
-
-    /**
-     * Create a String with your first name as content.
-     * Print out the String object to the console.
-     */
-    public static void practice1 (){
-        String firstName = "Simon";
-
-        System.out.println(firstName);
-    }
-
-    /**
-     * Create two Strings.
-     * One with your first name and the other with your last name.
-     * Print out both Strings to the console with a ” ” separating them.
-     */
-    public static void practice2(){
-
-        String firstName = "Simon";
-        String lastName = "Elbrink";
-
-        System.out.println(firstName + " " + lastName);
-    }
-
-    /**
-     * Create two variables with decimal values.
-     * Create a third decimal variable called result.
-     * Assign the sum of the two first variables to result.
-     */
-    public static void practice3(){
-        double number1 = 50.66;
-        double number2 = 25.96;
-        double result;
-
-        result = number1 + number2;
-
-        System.out.println(result);
-    }
-
-
 
 } // End of class
