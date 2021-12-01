@@ -1,6 +1,10 @@
 package se.lexicon;
 
-//Car class (BluePrint)
+/**
+ * Car class (BluePrint)
+ * Instructions on fields and attributes for a car.
+ */
+
 public class Car {
 
     //fields
@@ -11,6 +15,7 @@ public class Car {
     String color;
     String gearbox;
 
+    //function | method
     public String getInformation(){
         return "Car {" + "Brand: " + brand +" Model: "+ model +" ProductionYear: " + productionYear +
                 "  RegNumber: " + regNumber +" Color: " + color + " GearBox " + gearbox + "}";

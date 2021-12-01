@@ -9,56 +9,6 @@ public class App
     public static void main( String[] args )
     {
 
-////        if(BooleanExpression){}
-//        int numberToGuess = 50;
-//
-//        int myGuess = 50;
-//
-//        if (myGuess > numberToGuess){
-//            System.out.println("Number is to high, try a lower number.");
-//        } else if (myGuess < numberToGuess){
-//            System.out.println("Number is to low, try i higher number.");
-//        }else{
-//            System.out.println("You have guessed the correct number.");
-//        }
-
-
-//        //Guest, Employee, Manager, Ceo
-//        String role = "Manager";
-//
-//        switch (role){
-//
-//            case "Guest":
-//                System.out.println("Hello, welcome let me show you around!");
-//                break;
-//            case "Employee":
-//                System.out.println("Hello, welcome back, here are today's tasks.");
-//                break;
-//            case "Manager":
-//                System.out.println("Hello, Here is the report from yesterday!");
-//                break;
-//            case "Ceo":
-//                System.out.println("Hello, here is the report about the company's health.");
-//                break;
-//            default:
-//                System.out.println("Hm.. does not recognize that role");
-//        }
-
-
-
-//        String name = "Simon";
-////        name.concat(" Elbrink"); // will not save " Ebrink"
-//
-////        name = name.concat(" Elbrink"); //saves " Ebrink" to name using method.
-//        name = name + " Elbrink"; //Saving but doing it manually.
-//
-//
-//        System.out.println(name);
-////        System.out.println(name.concat(" Elbrink")); //prints correct but does not save.
-////        System.out.println(String.join(" ", name, "Elbrink"));
-
-
-
 
 //        String firstName = "Simon";
 //        String lastName = "Elbrink";
@@ -67,9 +17,18 @@ public class App
 //        String sentence = firstName + " " + lastName + " is interested in " + hobby + ".";
 //
 //        System.out.println("sentence = " + sentence);
+//
+//        String firstName1 = "Ulf";
+//        String lastName1 = "Bengtsson";
+//        String hobby1 = "Programming";
 
 
-        // ObjectType objectName = new ObjectType(); - Syntax ("new" is a keyword for instantiating)
+
+
+
+        /*
+        * ObjectType objectName = new ObjectType(); - Syntax ("new" is a keyword for instantiating)
+        */
 
         Car v70 = new Car();
 
@@ -84,14 +43,20 @@ public class App
 
         System.out.println(v70.getInformation());
 
+
+
         Car e30 = new Car();
 
         e30.brand = "bmw";
         e30.model = "e30";
-        //...
+        e30.productionYear = 1994;
+        e30.regNumber = "CBA321";
+        e30.color = "Silver";
+        e30.gearbox = "Manual";
 
         System.out.println(e30.brand);
-        System.out.println(e30.gearbox); // null
+        System.out.println(e30.gearbox);
+        System.out.println(e30.getInformation());
 
 
 
