@@ -14,6 +14,11 @@ public class Car {
     String regNumber;
     String color;
     String gearbox;
+    String ownerName;
+
+    public void printOwner(){
+        System.out.println("Owner of the car " + brand + " is " + ownerName);
+    }
 
     //function | method
     public String getInformation(){

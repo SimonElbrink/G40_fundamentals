@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import se.lexicon.inside.MyMethods;
+
 /**
  * Hello world!
  *
@@ -38,10 +40,12 @@ public class App
         v70.regNumber = "ABC123";
         v70.color = "Red";
         v70.gearbox = "Automatic";
+        v70.ownerName = "Simon Elbrink";
 
 //        System.out.println(v70.color);
 
         System.out.println(v70.getInformation());
+        v70.printOwner();
 
 
 
@@ -67,7 +71,7 @@ public class App
         System.out.println(v70.toString()); // Prints Object hash value by default. for now..
 
 
-        // Question - How do i show the a calculation?
+        // Question - How do I show the calculation?
         int a = 10;
         int b = 10;
         int result = a + b;
@@ -80,12 +84,23 @@ public class App
         // precedence - http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
 
 
+        System.out.println("For-loop");
 
 
+//        for (initialization;termination; increment){ Thing to do }
 
 
+        for(int i = 0; i<10; i++){
+            System.out.println(i);
+        }
+
+//        MyMethods.printMessage("#40");
 
 
 
     }
+
+
+
+
 }
