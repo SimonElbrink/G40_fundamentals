@@ -1,7 +1,5 @@
 package se.lexicon;
 
-import se.lexicon.inside.MyMethods;
-
 /**
  * Hello world!
  *
