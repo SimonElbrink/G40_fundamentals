@@ -1,4 +1,12 @@
+##Topics
 
+- Creating project
+- Git
+- Lectures
+    - Fundamentals
+    - methods
+    - loops
+- Practices
 
 ### git Checklist
 
