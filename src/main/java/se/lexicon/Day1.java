@@ -10,7 +10,7 @@ package se.lexicon; // Package always on line 1
  * Hello world!
  *
  */
-public class App { //start of the class
+public class Day1 { //start of the class
 
     /**
      * Main method, needed to run the program.
@@ -52,17 +52,6 @@ public class App { //start of the class
         boolean isTrue = true;
 
         System.out.println(isTrue);
-
-
-
-        System.out.println("#### PRACTICE 1 ####");
-        LecturePractices.practice1();
-
-        System.out.println("#### PRACTICE 2 ####");
-        LecturePractices.practice2(); // Calling method from our class.
-
-        System.out.println("#### PRACTICE 3 ####");
-        LecturePractices.practice3();
 
     } //End of main method
 

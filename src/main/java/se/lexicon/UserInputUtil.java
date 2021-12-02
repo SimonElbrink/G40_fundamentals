@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class UserInputUtil {
     public static final Scanner SCANNER = new Scanner(System.in);
 
-    public static String getStringFromUser(){
+    public static String getStringFromUser(String prompt){
+        System.out.println(prompt);
         return SCANNER.nextLine();
     }
 
