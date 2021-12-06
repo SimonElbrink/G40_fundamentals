@@ -1,4 +1,6 @@
-package se.lexicon;
+package se.lexicon.week2;
+
+import java.util.Arrays;
 
 /**
  * Hello world!
@@ -8,19 +10,23 @@ public class App
 {
     public static void main( String[] args )
     {
+
+        initArrays();
+
+
         iteratingAnArray();
-
-
     }
 
     public static void initArrays(){
 
-        char[] chars = new char[5]; //Created a char array, with a fixed size of 5 elements. Index 0 - 4 = (Size 5)
+        char[] chars = new char[5]; //A char array, with a fixed size of 5 elements. (Index 0-4)
 
         int[] numbers;  // Created, but non-initialized.
-//        numbers[1] = 10; // Will not run. need to init.
-        numbers = new int[4]; // Instantiated. now has the size of 4. [0, 0, 0, 0]
+//        numbers[1] = 10; // Will not run. Need to initialize first.
+        numbers = new int[4]; // Instantiated. Now has the size of 4. [0, 0, 0, 0]
         numbers[0] = 10; // [10, 0, 0, 0]
+
+        System.out.println(numbers[0]);
 
 
         char[] javaWord = new char[] {'J', 'A', 'V', 'A'}; // ['J', 'A', 'V', 'A']
@@ -44,10 +50,9 @@ public class App
             System.out.print(javaWord[i]);
         }
 
+        //Question - Can we use toString to print the Array?
 //        System.out.println(javaWord.toString()); Will print a hashcode.
-
-
-
+        System.out.println(Arrays.toString(javaWord));
 
     }
 }
