@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.week2;
 
 public class TaskListDAO {
 
@@ -26,7 +26,6 @@ public class TaskListDAO {
 
 
     public static String findTask(String taskToFind, String[] source){
-
         //Look through all elements
         for (String taskToCheck: source) {
 
@@ -37,7 +36,6 @@ public class TaskListDAO {
 
         //Otherwise give default message
         return "Could Not Find any Match";
-
     }
 
 
@@ -50,9 +48,8 @@ public class TaskListDAO {
 
         String[] newArray = new String[addToArray.length + 1]; // [null, null, null, null]
 
-
-        //Source : ["Clean Kids Room", "Make Food", "Go Shop Food"]
-        // Start :  [null, null, null, null]
+        // addToArray : ["Clean Kids Room", "Make Food", "Go Shop Food"]
+        // newArray :  [null, null, null, null]
         // Iteration 1 : ["Clean Kids Room", null, null, null]
         // Iteration 2 : ["Clean Kids Room", "Make Food", null, null]
         // Iteration 3 : ["Clean Kids Room", "Make Food", "Go Shop Food", null]
@@ -60,14 +57,11 @@ public class TaskListDAO {
             newArray[i] = addToArray[i];
         }
 
-
+        newArray[newArray.length -1] = taskToAdd; //newArray[3] = "Fuel the Car"
+        //         0               1            2                3
         //["Clean Kids Room", "Make Food", "Go Shop Food", "Fuel the Car"]
-        newArray[newArray.length -1] = taskToAdd;
-
-        System.out.println("LOG: Added " + taskToAdd + " To array");
 
         return newArray;
-
     }
 
 
