@@ -33,9 +33,13 @@ public class App
         //                      0       1       2    3        4
         String[] sentence = {"Hello", "This", "is", "a", "sentence"}; //["Hello", "This", "is", "a", "sentence"]
 
+        System.out.println(sentence[0]); //"Hello"
+
         String word = sentence[2];
 
         System.out.println(word); // is
+
+        System.out.println(sentence[sentence.length -1]); //"sentence"
 
     }
 

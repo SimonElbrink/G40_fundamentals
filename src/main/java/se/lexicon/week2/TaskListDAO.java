@@ -1,5 +1,7 @@
 package se.lexicon.week2;
 
+import java.util.Arrays;
+
 public class TaskListDAO {
 
     public static String[] taskList = {"Clean Kids Room", "Make Food", "Go Shop Food"};
@@ -15,20 +17,26 @@ public class TaskListDAO {
 //        taskList = addTask("Fuel the Car", taskList);
 //        printTasks(taskList);
 
-        System.out.println(findTask("ClEaN BathRooM", taskList));
+//        System.out.println(findTask("ClEaN BathRooM", taskList));
+//
+//        taskList = addTask("Clean Bathroom", taskList);
+//
+//        System.out.println(findTask("ClEaN BathRooM", taskList));
 
-        taskList = addTask("Clean Bathroom", taskList);
+        String[] tasksOfTheDay = {"java.util.Array Lecture", "Working with exercises", "Send exercises to Teacher"};
 
-        System.out.println(findTask("ClEaN BathRooM", taskList));
+       taskList = addTask(taskList, tasksOfTheDay);
 
+       taskList = addTask(taskList, "Eat Breakfast", "Eat Lunch");
+
+        System.out.println(taskList);
+        System.out.println(Arrays.toString(taskList));
 
     }
-
 
     public static String findTask(String taskToFind, String[] source){
         //Look through all elements
         for (String taskToCheck: source) {
-
             //Verify of it's a match
             if (taskToCheck.equalsIgnoreCase(taskToFind))
                 return taskToCheck;
@@ -38,24 +46,20 @@ public class TaskListDAO {
         return "Could Not Find any Match";
     }
 
+    public static String findTask(final String[] source, String taskToFind){
+        String[] temp = Arrays.copyOf(source, source.length);
+        Arrays.sort(temp);
+        int elementFoundOnIndexPosition = Arrays.binarySearch(temp, taskToFind);
 
-
-
-
-
+        if (elementFoundOnIndexPosition < 0) {
+            return null;
+        }
+        return temp[elementFoundOnIndexPosition];
+    }
 
     public static String[] addTask(String taskToAdd, String[] addToArray){
 
-        String[] newArray = new String[addToArray.length + 1]; // [null, null, null, null]
-
-        // addToArray : ["Clean Kids Room", "Make Food", "Go Shop Food"]
-        // newArray :  [null, null, null, null]
-        // Iteration 1 : ["Clean Kids Room", null, null, null]
-        // Iteration 2 : ["Clean Kids Room", "Make Food", null, null]
-        // Iteration 3 : ["Clean Kids Room", "Make Food", "Go Shop Food", null]
-        for (int i = 0; i<addToArray.length; i++){
-            newArray[i] = addToArray[i];
-        }
+        String[] newArray = Arrays.copyOf(addToArray, addToArray.length +1);
 
         newArray[newArray.length -1] = taskToAdd; //newArray[3] = "Fuel the Car"
         //         0               1            2                3
@@ -64,9 +68,15 @@ public class TaskListDAO {
         return newArray;
     }
 
-
-
-
+    public static String[] addTask(String[] source, String ...elementsToAdd){
+        String[] newArray = Arrays.copyOf(source, source.length + elementsToAdd.length);
+        //i - end of source, where to start adding element,
+        //j - The new element to add.
+        for (int i = source.length, j = 0; i < newArray.length;i++, j++){
+            newArray[i] = elementsToAdd[j];
+        }
+        return newArray;
+    }
 
 
     public static void printTasks(String[] tasksToPrint){
