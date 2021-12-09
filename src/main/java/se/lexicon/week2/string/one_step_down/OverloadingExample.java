@@ -1,4 +1,4 @@
-package se.lexicon.one_step_down;
+package se.lexicon.week2.string.one_step_down;
 
 public class OverloadingExample {
 

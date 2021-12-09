@@ -1,6 +1,4 @@
-package se.lexicon;
-
-import se.lexicon.one_step_down.OverloadingExample;
+package se.lexicon.week2.string;
 
 public class App
 {
