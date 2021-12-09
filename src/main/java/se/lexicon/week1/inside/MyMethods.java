@@ -1,4 +1,4 @@
-package se.lexicon.inside;
+package se.lexicon.week1.inside;
 
 public class MyMethods {
 

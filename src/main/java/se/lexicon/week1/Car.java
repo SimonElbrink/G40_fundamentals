@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.week1;
 
 /**
  * Car class (BluePrint)

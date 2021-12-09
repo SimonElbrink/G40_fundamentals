@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.week1;
 
 public class StringExample {
     public static void main(String[] args) {

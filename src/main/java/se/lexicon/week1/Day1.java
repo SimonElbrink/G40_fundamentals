@@ -1,4 +1,4 @@
-package se.lexicon; // Package always on line 1
+package se.lexicon.week1; // Package always on line 1
 
 // Single line comment
 

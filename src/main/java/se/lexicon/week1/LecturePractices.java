@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.week1;
 
 
 import java.util.Scanner;
@@ -148,6 +148,14 @@ public class LecturePractices {
 
         //Question - Cant we use toString()?
         System.out.println(v70.toString()); // Prints Object hash value by default. for now..
+
+
+        //Question can we store multi types in an array, NO but store One Object with many values.
+        Car[] cars = new Car[] {v70, e30};
+
+        System.out.println("----  CAR ARRAY -----");
+        System.out.println(cars[0].getInformation());
+        System.out.println(cars[1].getInformation());
 
     }
 
