@@ -5,10 +5,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.lexicon</groupId>
-  <artifactId>g40_fundamnetals_part2</artifactId>
+  <artifactId>g40_fundamentals</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>week1</module>
+    <module>week2/g40_fundamentals_arrays</module>
+    <module>week2/g40_fundamentals_string</module>
+    <module>week2/g40_workshop_array_string</module>
+    <module>week3/g40-oop-practice</module>
+    <module>week3/g40_booking_oop</module>
+    <module>week3/g40_java_time</module>
+  </modules>
 
-  <name>g40_fundamnetals_part2</name>
+  <name>g40_fundamentals</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -22,7 +32,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
