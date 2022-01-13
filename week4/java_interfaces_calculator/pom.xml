@@ -5,21 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>se.lexicon</groupId>
-  <artifactId>g40_fundamentals</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>java_interfaces_calculator</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>week1</module>
-    <module>week2/g40_fundamentals_arrays</module>
-    <module>week2/g40_fundamentals_string</module>
-    <module>week2/g40_workshop_array_string</module>
-    <module>week3/g40-oop-practice</module>
-    <module>week3/g40_booking_oop</module>
-    <module>week3/g40_java_time</module>
-    <module>week4/java_interfaces_calculator</module>
-  </modules>
 
-  <name>g40_fundamentals</name>
+  <name>java_interfaces_calculator</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
